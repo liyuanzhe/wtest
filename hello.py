@@ -3,8 +3,8 @@
 
 
 def increase_count(uid, uid_count_dict, delta):
-        count = uid_count_dict.get(uid, 0)
-        uid_count_dict[uid] = count + delta
+    count = uid_count_dict.get(uid, 0)
+    uid_count_dict[uid] = count + delta
 
 
 if __name__== "__main__":
@@ -12,8 +12,8 @@ if __name__== "__main__":
     list = range(10)
     print(list)
 
-    train_path = "/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/WeiboData/weibo_train_data.txt"
-    pred_path = "/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/WeiboData/weibo_predict_data.txt"
+    train_path = "/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/weibo_train_data.txt"
+    pred_path = "/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/weibo_predict_data.txt"
 
     file = open(train_path)
 
@@ -55,7 +55,7 @@ if __name__== "__main__":
         result_dict[uid] = result_str
 
     pred_file = open(pred_path)
-    result_file = open("/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/WeiboData/result.txt",'w')
+    result_file = open("/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/result.txt",'w')
     while 1:
         line = pred_file.readline()
         if not line:
