@@ -9,6 +9,12 @@ class Feed(object):
     def sum(self):
         return self.repostNum + self.commentNum + self.likeNum
 
+    def sumMax100(self):
+        sum = self.sum()
+        if(sum>100):
+            sum = 100
+        return sum
+
     def printFeed(self):
         print('%s %s %s %s' % (self.uid, self.repostNum, self.commentNum, self.likeNum))
 
@@ -26,5 +32,5 @@ class Feed(object):
         if(precision <= 0.8):
             return 0.0
         else:
-            return (realFeed.sum() + 1)
+            return (realFeed.sumMax100() + 1)
 

@@ -29,8 +29,8 @@ if __name__== "__main__":
     list = range(10)
     print(list)
 
-    train_path = "/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/WeiboData/weibo_train_data.txt"
-    pred_path = "/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/WeiboData/weibo_predict_data.txt"
+    train_path = "/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/weibo_train_data.txt"
+    pred_path = "/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/weibo_predict_data.txt"
 
     file = open(train_path)
 
@@ -73,7 +73,7 @@ if __name__== "__main__":
     print("calculate over")
 
     pred_file = open(pred_path)
-    result_file = open("/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/WeiboData/result20171221.txt",'w')
+    result_file = open("/home/liyuanzhe/Documents/tianchi/weibo/WeiboData/result20171221_2.txt",'w')
     while 1:
         line = pred_file.readline()
         if not line:
